@@ -1,6 +1,7 @@
 package com.example.mydog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -18,8 +19,8 @@ public class Login extends AppCompatActivity {
 
         //회원가입 버튼 클릭시, 회원가입 페이지로 이동
         sign.setOnClickListener(v -> {
-            //Intent intent = new Intent(this, Signup.class);
-            //startActivity(intent);
+            Intent intent = new Intent(this, signup.class);
+            startActivity(intent);
         });
     }
 }
